@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Juego del Impostor</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./estilos/general.css" />
+
+  <!-- Firebase SDKs compat para navegador clásico -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBITsUwjILxL--fI-VIJf3EFmqJHhNVS-U",
+      authDomain: "jugadoresaleatorios-e7c76.firebaseapp.com",
+      databaseURL: "https://jugadoresaleatorios-e7c76-default-rtdb.firebaseio.com",
+      projectId: "jugadoresaleatorios-e7c76",
+      storageBucket: "jugadoresaleatorios-e7c76.appspot.com",
+      messagingSenderId: "688515212678",
+      appId: "1:688515212678:web:021467f83c0393d28c7807",
+      measurementId: "G-TMELDNZPY8"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- Tu script -->
+  <script defer src="./scripts/programa.js"></script>
+</head>
+<body>
+  <h1>Esperando jugadores...</h1>
+  <div id="status"></div>
+  <button id="readyBtn">Estoy listo</button>
+  <button id="restartBtn">Reiniciar</button>
+  <div id="role"></div>
+</body>
+</html>
